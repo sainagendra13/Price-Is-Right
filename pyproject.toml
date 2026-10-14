@@ -1,0 +1,20 @@
+[project]
+name = "price-is-right"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "chromadb>=1.5.9",
+    "datasets>=5.1.0",
+    "feedparser>=6.0.14",
+    "gradio>=6.30.0",
+    "joblib>=1.6.0",
+    "langgraph>=1.2.15",
+    "numpy>=2.5.4",
+    "openai>=3.31.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.1",
+]
