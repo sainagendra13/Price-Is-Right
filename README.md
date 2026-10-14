@@ -31,38 +31,10 @@ Scanner Agent → Preprocessor Agent → DNN Agent → RAG Agent → Ensemble Ag
 
 The application uses LangGraph to orchestrate specialized AI agents responsible for discovering, evaluating, and ranking product deals.
 
-flowchart TD
-    A([User clicks Find Deals]) --> B[Scanner Agent]
-    B --> C{New deals found?}
+Multi-Agent Workflow Architecture Diagram.png
 
-    C -->|No| K[Planning Agent]
-    C -->|Yes| D[Select Next Product]
+![Multi-Agent Workflow Architecture](Multi-Agent Workflow Architecture Diagram.png)
 
-    D --> E[Preprocessor Agent]
-    E --> F[DNN Agent]
-    F --> G[RAG Agent]
-    G --> H[Ensemble Agent]
-    H --> I[Calculate Estimated Savings]
-
-    I --> J{More products?}
-    J -->|Yes| D
-    J -->|No| K
-
-    K --> L{Savings exceed threshold?}
-    L -->|Yes| M[Messaging Agent: Pushover Alert]
-    L -->|No| N[No qualifying deal]
-
-    M --> O[Save Processed URLs]
-    N --> O
-    O --> P([Display Results in Gradio])
-
-    subgraph Machine Learning
-        F
-    end
-
-    subgraph Retrieval Augmented Generation
-        G
-    end
 
 Workflow Explanation
 
