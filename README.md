@@ -31,7 +31,7 @@ Scanner Agent → Preprocessor Agent → DNN Agent → RAG Agent → Ensemble Ag
 
 The application uses LangGraph to orchestrate specialized AI agents responsible for discovering, evaluating, and ranking product deals.
 
-![Multi-Agent Workflow Architecture](Multi-Agent Workflow Architecture Diagram.png)
+![Multi-Agent Workflow Architecture](<Multi-Agent Workflow Architecture Diagram.png>)
 
 
 Workflow Explanation
